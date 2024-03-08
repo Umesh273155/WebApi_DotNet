@@ -1,0 +1,44 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>   
+</div>
+
+<div class="row col-lg-12 justify-content-center">
+    <input type="text" id="txtname" class="form-control" placeholder="Name"/>
+    <input type="text" id="txtmobile" class="form-control" placeholder="Email" />
+    <br />
+    <button class="btn btn-success" id="btnSave">Save</button>
+    <input type="hidden" id="hidEmpId"value="0"/>
+</div>
+<script>
+    $(document).ready(function () {
+        $("#btnSave").click(function () {
+            AddUpdateEmployee();
+        });
+      
+    });
+
+    function AddUpdateEmployee(){
+        debugger;
+        var obj = {};
+        obj.EmpName = $("#txtname").val();
+        obj.Email = $("#txtmobile").val();
+        obj.EmpId = parseInt($("#hidEmpId").val());
+        $.ajax({
+            type: "POST",
+            url: "/Home/AddUpdateEmployee",
+            data: JSON.stringify(obj),
+            contentType: "application/json;charset=utf-8",
+            dataType: "json",
+            success: function (response) {
+                alert(response.message);
+            },
+            error: function (error) {
+                alert("Error");
+            }
+        });
+    }
+</script>

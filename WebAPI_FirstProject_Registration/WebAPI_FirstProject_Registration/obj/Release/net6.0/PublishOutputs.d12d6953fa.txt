@@ -1,0 +1,17 @@
+D:\LearningProject\CORE_LEARNING\WebAPI_FirstProject_Registration\WebAPI_FirstProject_Registration\obj\Release\net6.0\PubTmp\Out\WebAPI_FirstProject_Registration.exe
+D:\LearningProject\CORE_LEARNING\WebAPI_FirstProject_Registration\WebAPI_FirstProject_Registration\obj\Release\net6.0\PubTmp\Out\appsettings.Development.json
+D:\LearningProject\CORE_LEARNING\WebAPI_FirstProject_Registration\WebAPI_FirstProject_Registration\obj\Release\net6.0\PubTmp\Out\appsettings.json
+D:\LearningProject\CORE_LEARNING\WebAPI_FirstProject_Registration\WebAPI_FirstProject_Registration\obj\Release\net6.0\PubTmp\Out\WebAPI_FirstProject_Registration.dll
+D:\LearningProject\CORE_LEARNING\WebAPI_FirstProject_Registration\WebAPI_FirstProject_Registration\obj\Release\net6.0\PubTmp\Out\WebAPI_FirstProject_Registration.deps.json
+D:\LearningProject\CORE_LEARNING\WebAPI_FirstProject_Registration\WebAPI_FirstProject_Registration\obj\Release\net6.0\PubTmp\Out\WebAPI_FirstProject_Registration.runtimeconfig.json
+D:\LearningProject\CORE_LEARNING\WebAPI_FirstProject_Registration\WebAPI_FirstProject_Registration\obj\Release\net6.0\PubTmp\Out\WebAPI_FirstProject_Registration.pdb
+D:\LearningProject\CORE_LEARNING\WebAPI_FirstProject_Registration\WebAPI_FirstProject_Registration\obj\Release\net6.0\PubTmp\Out\Microsoft.OpenApi.dll
+D:\LearningProject\CORE_LEARNING\WebAPI_FirstProject_Registration\WebAPI_FirstProject_Registration\obj\Release\net6.0\PubTmp\Out\Swashbuckle.AspNetCore.Swagger.dll
+D:\LearningProject\CORE_LEARNING\WebAPI_FirstProject_Registration\WebAPI_FirstProject_Registration\obj\Release\net6.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\LearningProject\CORE_LEARNING\WebAPI_FirstProject_Registration\WebAPI_FirstProject_Registration\obj\Release\net6.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\LearningProject\CORE_LEARNING\WebAPI_FirstProject_Registration\WebAPI_FirstProject_Registration\obj\Release\net6.0\PubTmp\Out\System.Data.SqlClient.dll
+D:\LearningProject\CORE_LEARNING\WebAPI_FirstProject_Registration\WebAPI_FirstProject_Registration\obj\Release\net6.0\PubTmp\Out\runtimes\win-arm64\native\sni.dll
+D:\LearningProject\CORE_LEARNING\WebAPI_FirstProject_Registration\WebAPI_FirstProject_Registration\obj\Release\net6.0\PubTmp\Out\runtimes\win-x64\native\sni.dll
+D:\LearningProject\CORE_LEARNING\WebAPI_FirstProject_Registration\WebAPI_FirstProject_Registration\obj\Release\net6.0\PubTmp\Out\runtimes\win-x86\native\sni.dll
+D:\LearningProject\CORE_LEARNING\WebAPI_FirstProject_Registration\WebAPI_FirstProject_Registration\obj\Release\net6.0\PubTmp\Out\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\LearningProject\CORE_LEARNING\WebAPI_FirstProject_Registration\WebAPI_FirstProject_Registration\obj\Release\net6.0\PubTmp\Out\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll

@@ -1,0 +1,112 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<input type="text" id="txtname" class="form-control"/>
+<input type="hidden" id="hidempid"value="0"/>
+<button id="btnsave">
+    Save
+</button>
+
+<table id="tblemployee">
+    <thead>
+        <tr>
+            <th>SrNo</th>
+            <th>Name</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        
+    </tbody>
+</table>
+<script>
+    $(document).ready(function () {
+        GetEmpList();
+
+        $("#btnsave").click(function () {
+            var obj = {};
+              obj.Name = $("#txtname").val();
+              obj.Id=parseInt($("#hidempid").val());           
+
+            $.ajax({
+                 type:"POST",
+                 url: "/Home/AddUpdateEmployee",
+                 data: JSON.stringify(obj),
+                 contentType:"application/json;charset=utf-8",
+                 dataType:"json",
+                success: function (response) {
+                    alert(response.message);
+                },
+                error: function () {
+
+                }
+            });
+        });
+    });
+
+    function GetEmpList(){
+        $.ajax({
+            type: "POST",
+            url: "/Home/GetEmployee",            
+            contentType: "application/json;charset=utf-8",
+            dataType: "json",
+            success: function (response) {
+                var html = "";
+                debugger;
+                response.forEach(function (v, i) {
+                    
+                    html += `<tr data-id=${v.id}>`;
+                    html += `<td data=${i+1}>`;
+                    html += `<td>${v.name}</td>`;
+                    html += `<td><button onclick="Edit(this)">Edit</button></td>`;
+                    html += `<td><button onclick="Delete(this)">Delete</button></td>`;
+                    html += `</tr>`;
+                });
+                $("#tblemployee tbody").append(html);
+            },
+            error: function () {
+                alert("error");
+            }
+        });
+    }
+    function Edit(element) {
+        var Id = parseInt($(element).closest('tr').data('id'));
+        $.ajax({
+            type: "POST",
+            url: "/Edit?Id=" + Id,
+            contentType: "application/json;charset=utf-8",
+            dataType: "json",
+            success: function (response) {
+                debugger;
+                alert(response.name);
+                alert(response.id);
+              $("#txtname").val(response.name);
+              $("#hidempid").val(response.id);
+            },
+            error: function () { 
+            }
+        });
+    }
+
+    function Delete(element) {
+        debugger;
+        var Id = parseInt($(element).closest('tr').data('id'));
+        $.ajax({
+            type: "POST",
+            url: "/Delete?Id=" + Id,           
+            contentType: "application/json;charset=utf-8",
+            dataType: "json",
+            success: function (response) {
+                alert(response.message);
+            },
+            error: function () {
+            }
+        });
+    }
+</script>
+
+
+
+ 
